@@ -151,7 +151,7 @@ print("dt =", t[1] - t[0])
 # Domain, functions, etc.
 params = {'x': X, 'y': Y, 'V': V, 'kap': kap, 'f': ff, 'g1': gg1,'g2': gg2,}
 
-""" # Animation #
+# Animation #
 # Initial condition (vectorized)
 y0 = np.r_[u0(X, Y).flatten(), b0(X, Y).flatten(), b1(X, Y).flatten()]
 
@@ -202,13 +202,13 @@ with imageio.get_writer('incendio_python.gif', mode='I') as writer:
         image = imageio.imread(filename)
         writer.append_data(image)
           
-print("GIF listo!") """
+print("GIF listo!") 
 
 
-""" # Remove files
+# Remove files
 for filename in set(filenames):
     os.remove(filename)
- """
+
 # Benchmarking # 
 
 tiempo=[]
